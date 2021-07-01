@@ -1,0 +1,64 @@
+* Instructions d'installation
+Nous donnerons ci-dessous des instructions détaillées pour les utilisateurs d'Ubuntu et de Manjaro. Pour les autres distributions, référez-vous à la documentation spécifique de votre /package manager/.
+
+** Perl
+[[https://www.perl.org/get.html][Perl]] est pré-installé sur la plupart des distributions Linux. Si ce n'est pas le cas, ajoutez-le en exécutant par exemple sous Ubuntu :
+
+#+begin_src shell
+sudo apt-get install perl
+#+end_src
+
+ou sous Manjaro :
+
+#+begin_src shell
+sudo pacman -S perl
+#+end_src
+
+** Distribution LaTeX (TeX Live)
+Nous aurons besoin, durant la formation, d'une distribution LaTeX complète. L'installation peut être un peu lourde et représenter un certain temps de téléchargement, mais cela évitera les problèmes de packages manquants le jour J.
+
+Pour Linux, la distribution LaTeX recommandée est [[https://www.tug.org/texlive/][TeX Live]]. Les instructions d'installation sont disponibles sur le site officiel, mais, à titre indicatif, voici la commande nécessaire pour Ubuntu :
+
+#+begin_src shell
+sudo apt-get install texlive-full
+#+end_src
+
+ainsi que la commande nécessaire pour Manjaro :
+#+begin_src shell
+sudo pacman -Syyu texlive-most texlive-lang texlive-publishers texlive-science texlive-bibtexextra texlive-fontsextra texlive-formatsextra texlive-humanities biber
+#+end_src
+
+Remarques :
+- certains d'entre vous disposent peut-être déjà d'une installation LaTeX : veillez dans ce cas à la rendre la plus complète possible, et à la mettre à jour si possible ;
+- vous disposez peut-être aussi d'une distribution LaTeX différente. Si vous avez par exemple la version complète de [[https://miktex.org/download][MiKTeX]] : c'est parfaitement valide ! En revanche, si vous avez un exemple très minimal de distribution LaTeX, comme [[https://github.com/yihui/tinytex/][tinytex]], vous pourrez éventuellement (?) avoir quelques difficultés (non testé sur mon poste, mais c'est une possibilité).
+
+** Pandoc
+[[https://pandoc.org/installing.html][Pandoc]] pourra être nécessaire pour obtenir de meilleurs exports en .odt ou .docx. Pour l'installer sous Ubuntu :
+
+#+begin_src shell
+sudo apt-get install pandoc pandoc-citeproc
+#+end_src
+
+et sous Manjaro :
+
+#+begin_src shell
+sudo pacman -S pandoc pandoc-citeproc
+#+end_src
+
+** Installer Emacs
+Emacs est pré-installé sur certaines distributions Linux, et est aisément téléchargeable à partir des dépôts officiels de chaque distribution.
+
+Par exemple, pour Ubutnu :
+#+begin_src shell
+sudo apt-get install emacs
+#+end_src
+
+Ou encore, pour Manjaro :
+#+begin_src shell
+sudo pacman -S emacs
+#+end_src
+
+** TODO Configurer Emacs
+Afin que nous utilisions tous la même version et les mêmes fonctionnalités d'Emacs durant la formation, j'ai mis en ligne un fichier d'initialisation d'Emacs (~init.el~) que vous devrez télécharger puis placer dans le dosser =~/.emacs.d/= avant le début de la formation.
+
+Ce fichier contient une "distribution" minimale d'Emacs, et se charge de l'installation automatique de certains packages

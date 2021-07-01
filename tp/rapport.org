@@ -1,0 +1,79 @@
+#+TITLE: Utiliser GNU Emacs et Org mode dans le milieu académique
+#+AUTHOR: Frédéric Santos
+#+DATE: \today
+#+EMAIL: frederic.santos@u-bordeaux.fr
+#+STARTUP: showall
+#+OPTIONS: email:t toc:t ^:nil
+#+LATEX_HEADER: \usepackage[natbibapa]{apacite}
+#+LATEX_HEADER: \usepackage[french]{babel}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \usepackage{mathpazo}
+#+LATEX_HEADER: \usepackage{titlesec}
+#+LATEX_HEADER: \titlelabel{\thetitle.\quad}
+#+LATEX_HEADER: \usepackage[usenames,dvipsnames]{xcolor} % For colors with friendly names
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \usepackage{url}
+#+LATEX_HEADER: %% For DOI hyperlinks in biblio:
+#+LATEX_HEADER: \usepackage{doi}
+#+LATEX_HEADER: \renewcommand{\doiprefix}{}
+#+LANGUAGE: fr
+
+* Arrière-boutique                                                 :noexport:
+- [X] une arborescence
+- [X] une image
+- [X] une table
+- [X] des liens
+- [X] des références croisées
+- [ ] des références biblio (revue de littérature), fournir un .bib
+- [ ] une mise en forme LaTeX (Elsarticle)
+
+* GNU Emacs
+** Historique
+Emacs est une /famille/ d'éditeurs de texte avancés, dont le représentant le plus populaire est GNU Emacs. À l'origine, "Emacs" signifie "Editing MACroS", et le système de macros est encore une des forces d'Emacs aujourd'hui.
+
+Emacs a été créé en 1976 par Richard Stallman, en repartant d'un éditeur de texte propriétaire de l'époque. GNU Emacs en a offert une version libre et extensible.
+
+** Philosophie
+Emacs est un éditeur de texte :
+- extensible (possibilité d'installer de nombreux plug-ins, ou /packages/) ;
+- personnalisable ;
+- documenté (une aide exhaustive est intégrée).
+
+** Communauté
+Les débutants peuvent trouver de l'aide notamment via :
+- le site [[https://emacs.stackexchange.com/][StackExchange]] ;
+- un channel Telegram intégré grâce à [[https://zevlg.github.io/telega.el/][Telega]].
+
+** Quelques concurrents
+La table ref:table-concurrents présente quelques autres éditeurs de texte avancés.
+
+#+CAPTION: Quelques concurrents d'Emacs. label:table-concurrents
+|----------+----------------+-----------------------------|
+| Éditeur  | OS             | Commentaire                 |
+|----------+----------------+-----------------------------|
+| Atom     | Tous           | Très populaire sous Windows |
+| nano     | Linux, Macs OS | Un éditeur plus léger       |
+| vi / vim | Linux          | L'autre éditeur "expert"    |
+|----------+----------------+-----------------------------|
+
+** Identité visuelle
+Le logo d'Emacs est présenté en figure ref:fig-logo.
+
+#+CAPTION: Le logo d'Emacs. label:fig-logo
+#+ATTR_LATEX: :width 0.2 \textwidth
+[[./images/emacs.png]]
+
+* Org mode
+** Historique
+Org mode est un mode majeur d'Emacs, créé en 2003 par l'astronome Carsten Dominik. Il s'agissait à l'origine d'un système avancé de prise de notes pour scientifiques,mais il a rapidement évolué pour devenir un système très polyvalent d'organisation au quotidien et de rédaction de documents académiques.
+
+** Polyvalence
+Nous aurons vu au cours de cette formation deux fonctionnalités principales d'Org mode :
+1. Le langage de balisage Org pour rédiger des documents
+2. La gestion de tâches pour s'organiser au quotidien
+
+* Des exemples d'utilisation d'Org mode dans le milieu académique
+Org mode est très adapté à l'écriture d'articles de recherche reproductibles citep:schulte2012_MultiLanguageComputingEnvironment. On trouve aisément des exemples d'articles rédigés à 100% en Org mode, certains étant assez anciens [[citep:dye2011_ModelbasedAgeEstimate][e.g.,::]], d'autres très récents citep:santos2020_ModernMethodsOld,fraga2021_MultipleSimultaneousSolution.
+
+bibliography:biblio.bib
+bibliographystyle:apacite

@@ -1,0 +1,22 @@
+* Instructions d'installation
+Nous donnerons ci-dessous des instructions détaillées pour les utilisateurs de Windows 10. Elles devraient néanmoins être équivalentes pour les versions (raisonnablement récentes) de Windows.
+
+** Perl
+[[https://www.perl.org/get.html][Perl]] est un langage de programmation qui n'est pas pré-installé sur Windows. La distribution Perl la plus connue pour Windows est [[https://strawberryperl.com/][Starwberry Perl]] : vous pourrez trouver un lien de téléchargement vers la version la plus récente sur le site officiel.
+
+** Distribution LaTeX (TeX Live)
+Nous aurons besoin, durant la formation, d'une distribution LaTeX complète. L'installation peut être un peu lourde et représenter un certain temps de téléchargement, mais cela évitera les problèmes de packages manquants le jour J.
+
+Je recommande la distribution LaTeX [[http://tug.org/texlive/acquire-netinstall.html][TeX Live]] 2021 : vous trouverez le lien de téléchargement sur le site officiel. Une fois le fichier ~install-tl-windows.exe~ téléchargé, exécutez-le pour lancer l'installation de la distribution complète... et partez prendre un café en attendant. :-)
+
+Remarques :
+- certains d'entre vous disposent peut-être déjà d'une installation LaTeX : veillez dans ce cas à la rendre la plus complète possible, et à la mettre à jour si possible ;
+- vous disposez peut-être aussi d'une distribution LaTeX différente. Si vous avez par exemple la version complète de [[https://miktex.org/download][MiKTeX]] : c'est parfaitement valide ! En revanche, si vous avez un exemple très minimal de distribution LaTeX, comme [[https://github.com/yihui/tinytex/][tinytex]], vous pourrez éventuellement (?) avoir quelques difficultés (non testé sur mon poste, mais c'est une possibilité).
+
+** Pandoc
+[[https://pandoc.org/installing.html][Pandoc]] pourra être nécessaire pour obtenir de meilleurs exports en .odt ou .docx. Vous trouverez le lien d'installation sur le site officiel ; l'installation en elle-même ne devrait présenter aucune difficulté.
+
+** Installer Emacs
+Dans cette formation, nous partirons avec un Emacs "vierge" (i.e., non customisé/hacké par des tiers), qui peut être téléchargé en suivant [[http://ftp.gnu.org/gnu/emacs/windows/emacs-27/emacs-27.2-x86_64-installer.exe][ce lien]]. L'installation ne devrait poser aucun problème.
+
+** TODO Configurer Emacs

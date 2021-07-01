@@ -1,0 +1,61 @@
+#+TITLE: Introduction à Emacs et Org mode pour les universitaires
+#+AUTHOR: Frédéric Santos
+#+DATE: 4 octobre 2021
+#+EMAIL: frederic.santos@u-bordeaux.fr
+#+STARTUP: showall
+#+OPTIONS: email:t toc:nil ^:nil
+#+LATEX_HEADER: \usepackage[natbibapa]{apacite}
+#+LATEX_HEADER: \usepackage[french]{babel}
+#+LATEX_HEADER: \usepackage{a4wide}
+#+LATEX_HEADER: \usepackage{mathpazo}
+#+LATEX_HEADER: \usepackage{mbboard}
+#+LATEX_HEADER: \usepackage[matha,mathb]{mathabx}
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{titlesec}
+#+LATEX_HEADER: \titlelabel{\thetitle.\quad}
+#+LATEX_HEADER: \usepackage[usenames,dvipsnames]{xcolor} % For colors with friendly names
+#+LATEX_HEADER: \usepackage{minted}
+#+LATEX_HEADER: \usepackage{mdframed}                    % Companion of minted for code blocks
+#+LATEX_HEADER: \usepackage{fancyvrb}                    % For verbatim R outputs
+#+LATEX_HEADER: \usemintedstyle{friendly} % set style if needed, see https://frama.link/jfRr8Lpj
+#+LATEX_HEADER: \mdfdefinestyle{mystyle}{linecolor=gray!30,backgroundcolor=gray!30}
+#+LATEX_HEADER: \BeforeBeginEnvironment{minted}{%
+#+LATEX_HEADER: \begin{mdframed}[style=mystyle]}
+#+LATEX_HEADER: \AfterEndEnvironment{minted}{%
+#+LATEX_HEADER: \end{mdframed}}
+#+LATEX_HEADER: %% Formatting of verbatim outputs (i.e., outputs of R results):
+#+LATEX_HEADER: \DefineVerbatimEnvironment{verbatim}{Verbatim}{%
+#+LATEX_HEADER:   fontsize = \small,
+#+LATEX_HEADER:   frame = leftline,
+#+LATEX_HEADER:   formatcom = {\color{gray!97}}
+#+LATEX_HEADER: }
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \usepackage{url}
+#+LATEX_HEADER: %% For DOI hyperlinks in biblio:
+#+LATEX_HEADER: \usepackage{doi}
+#+LATEX_HEADER: \renewcommand{\doiprefix}{}
+#+LANGUAGE: fr
+
+* Pourquoi utiliser Emacs ?
+
+* Installation
+Des instructions d'installation peuvent être trouvées sur le dépôt en ligne de la formation : 
+
+* Concepts et commandes basiques
+
+* Personnaliser Emacs
+** Via l'interface graphique
+** Via le fichier d'initialisation
+
+* Utiliser Org mode
+** Fonctionnalités
+** Rédiger un court document
+** Export en PDF
+** Export en d'autres formats (html, odt, etc.)
+** Org mode comme planificateur du quotidien
+
+* Pile logicielle pour rédiger des articles scientifiques
+
+* Biblio                                                             :ignore:
+bibliography:~/PACEA_MyCore/complete_biblio.bib
+bibliographystyle:apacite
