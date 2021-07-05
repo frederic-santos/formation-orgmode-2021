@@ -1,6 +1,7 @@
-#+TITLE: Utiliser GNU Emacs et Org mode dans le milieu académique
+#+TITLE: Utiliser GNU Emacs et Org mode à l'université
+#+SUBTITLE: Rédiger des documents aisément, s'organiser au quotidien
 #+AUTHOR: Frédéric Santos
-#+DATE: \today
+#+DATE: 4 octobre 2021
 #+EMAIL: frederic.santos@u-bordeaux.fr
 #+STARTUP: showall
 #+OPTIONS: email:t toc:t ^:nil
