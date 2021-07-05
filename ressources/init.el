@@ -202,7 +202,6 @@ Sort alphabetically the CANDIDATES (which is a list of strings)."
   :config
   (require 'org-tempo)
   (require 'ox-latex)   ; export LaTeX
-  (require 'ox-bibtex)  ; nécessaire pour de jolies références en HTML
   ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   ;; 1. Configuration générale de Org-mode :
   ;; Apparence générale d'un document Org :
@@ -241,9 +240,6 @@ Sort alphabetically the CANDIDATES (which is a list of strings)."
   (setq org-habit-preceding-days 30)
   (setq org-habit-today-glyph ?.)
   (setq org-habit-completed-glyph ?✓)
-  ;; Activation du tag :ignore :
-  (require 'ox-extra)
-  (ox-extras-activate '(ignore-headlines))
   ;; Réglages pour l'export LaTeX :
   (setq org-export-with-smart-quotes t) ;; de jolis guillemets français par défaut (avec babel !)
   (setq org-latex-caption-above nil) ;; les légendes sont à positionner au-dessous des flottants
