@@ -226,7 +226,7 @@ Sort alphabetically the CANDIDATES (which is a list of strings)."
           ("SOMEDAY" . "blue")
           ("WAITING" . "gold2")
           ("REVIEW"  . "purple")
-	  ("CANCELED" . "thistle4")
+          ("CANCELED" . "thistle4")
           ("DONE" . "forest green")))
   (setq org-enforce-todo-dependencies t) ;; tâches mères et filles
   ;; Drawers et logging :
@@ -288,7 +288,7 @@ Sort alphabetically the CANDIDATES (which is a list of strings)."
   :config
   ;; Réglages généraux :
   (global-set-key (kbd "C-c a") 'org-agenda) ;; raccourci clavier pour M-x org-agenda
-  (setq org-agenda-files '(my-todo-file)) ;; fichier où chercher les tâches
+  (setq org-agenda-files (list my-todo-file)) ;; fichier où chercher les tâches
   (setq org-archive-reversed-order t)
   ;; Custom agenda view :
   (setq org-agenda-custom-commands
