@@ -272,11 +272,11 @@ Sort alphabetically the CANDIDATES (which is a list of strings)."
       "* TODO %^{Article} %^g\n %?")
      ("td" "Développement logiciel"
       entry
-      (file+headline my-todo-file "Développement logiciel")
+      (file+headline my-todo-file "Programmation")
       "* SOMEDAY %^{Projet de dév} %^g\n %?")
      ("u" "Formation Urfist"
       entry
-      (file+headline my-todo-file "Formations à suivre")
+      (file+headline my-todo-file "Formations")
       "* TODO %^{Formation} %^g\n SCHEDULED: %^t\n %?"))))
   ;; Afficher les images :
   (add-hook 'org-mode-hook 'org-display-inline-images)
