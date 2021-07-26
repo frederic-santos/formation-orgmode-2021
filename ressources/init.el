@@ -11,9 +11,9 @@
 ;; Choix et priorité des dépôts :
 (package-initialize)
 (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.org/packages/"))
+             '("melpa" . "http://melpa.org/packages/"))
 (add-to-list 'package-archives
-	     '("org" . "https://orgmode.org/elpa/") t)
+             '("org" . "https://orgmode.org/elpa/") t)
 (setq package-archive-priorities '(("gnu" . 5)
                                    ("melpa" . 10)
                                    ("org" . 11)))
@@ -219,9 +219,9 @@ Sort alphabetically the CANDIDATES (which is a list of strings)."
   (setf (nth 4 org-emphasis-regexp-components) 10)
   ;; Gestion des TODO listes :
   (setq org-todo-keywords ;; nouveaux statuts
-      '((sequence "TODO(t)" "IN-PROGRESS(p)" "SOMEDAY(s)" "WAITING(w@)" "REVIEW(r)" "|" "DONE(d)" "CANCELED(c@)")))
+        '((sequence "TODO(t)" "IN-PROGRESS(p)" "SOMEDAY(s)" "WAITING(w@)" "REVIEW(r)" "|" "DONE(d)" "CANCELED(c@)")))
   (setq org-todo-keyword-faces ;; couleurs associées
-	'(("TODO" . "red3")
+        '(("TODO" . "red3")
           ("IN-PROGRESS" . "DarkOrange2")
           ("SOMEDAY" . "blue")
           ("WAITING" . "gold2")
@@ -245,17 +245,13 @@ Sort alphabetically the CANDIDATES (which is a list of strings)."
   (setq org-latex-caption-above nil) ;; les légendes sont à positionner au-dessous des flottants
   (setq org-latex-pdf-process (list "latexmk -shell-escape -bibtex -f -pdf %f"))
   (require 'ox-beamer) ;; activer le support de beamer
-  (defun my-beamer-bold (contents backend info)
-    (when (eq backend 'beamer)
-      (replace-regexp-in-string "\\`\\\\[A-Za-z0-9]+" "\\\\textbf" contents)))
-  (add-to-list 'org-export-filter-bold-functions 'my-beamer-bold)
   ;; Ajout de classes LaTeX spécifiques aux éditeurs scientifiques :
   (add-to-list 'org-latex-classes
-	       '("elsarticle"
-		 "\\documentclass{elsarticle}"
-		 ("\\section{%s}" . "\\section*{%s}")
-		 ("\\subsection{%s}" . "\\subsection*{%s}")
-		 ("\\subsubsection{%s}" . "\\subsubsection*{%s}")))
+               '("elsarticle"
+       	         "\\documentclass{elsarticle}"
+       	         ("\\section{%s}" . "\\section*{%s}")
+       	         ("\\subsection{%s}" . "\\subsection*{%s}")
+                 ("\\subsubsection{%s}" . "\\subsubsection*{%s}")))
   ;; Réglages pour org-capture :
   (global-set-key (kbd "C-c c") 'org-capture) ;; keybinding suggéré par le manuel
   (setq org-archive-subtree-save-file-p t)
@@ -277,7 +273,7 @@ Sort alphabetically the CANDIDATES (which is a list of strings)."
      ("u" "Formation Urfist"
       entry
       (file+headline my-todo-file "Formations")
-      "* TODO %^{Formation} %^g\n SCHEDULED: %^t\n %?"))))
+      "* TODO %^{Formation}\n SCHEDULED: %^t\n %?"))))
   ;; Afficher les images :
   (add-hook 'org-mode-hook 'org-display-inline-images)
   ;; Afficher les PDF directement dans Emacs (corrige un possible bug avec C-c C-e l o):
@@ -327,12 +323,6 @@ Sort alphabetically the CANDIDATES (which is a list of strings)."
 (use-package org-starter
   :ensure t
   :defer t)
-
-(use-package org-alert
-  :ensure t
-  :config
-  (setq alert-default-style 'libnotify)
-  (setq org-alert-interval 300))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; OUTILS D'ECRITURE SCIENTIFIQUE ;;;
