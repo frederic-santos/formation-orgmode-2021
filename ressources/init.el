@@ -149,9 +149,9 @@ Sort alphabetically the CANDIDATES (which is a list of strings)."
 
 ;; Backups automatiques :
 (setq backup-directory-alist
-          `((".*" . ,temporary-file-directory)))
+      `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
-          `((".*" , temporary-file-directory t)))
+      `((".*" , temporary-file-directory t)))
 
 ;; Ajout de dictionnaires :
 (let ((langs '("american" "british" "francais")))
@@ -256,24 +256,24 @@ Sort alphabetically the CANDIDATES (which is a list of strings)."
   (global-set-key (kbd "C-c c") 'org-capture) ;; keybinding suggéré par le manuel
   (setq org-archive-subtree-save-file-p t)
   (setq org-capture-templates
-   (quote
-    (("r" "Rendez-vous"
-      entry
-      (file+headline my-todo-file "Rendez-vous")
-      "* TODO %^{Nouveau RDV}\n SCHEDULED: %^t\n %?")
-     ("t" "Tâche scientifique")
-     ("ta" "Projet d'article"
-      entry
-      (file+headline my-todo-file "Articles")
-      "* TODO %^{Article} %^g\n %?")
-     ("td" "Développement logiciel"
-      entry
-      (file+headline my-todo-file "Programmation")
-      "* SOMEDAY %^{Projet de dév} %^g\n %?")
-     ("u" "Formation Urfist"
-      entry
-      (file+headline my-todo-file "Formations")
-      "* TODO %^{Formation}\n SCHEDULED: %^t\n %?"))))
+        (quote
+         (("r" "Rendez-vous"
+           entry
+           (file+headline my-todo-file "Rendez-vous")
+           "* TODO %^{Nouveau RDV}\n SCHEDULED: %^t\n %?")
+          ("t" "Tâche scientifique")
+          ("ta" "Projet d'article"
+           entry
+           (file+headline my-todo-file "Articles")
+           "* TODO %^{Article} %^g\n %?")
+          ("td" "Développement logiciel"
+           entry
+           (file+headline my-todo-file "Programmation")
+           "* SOMEDAY %^{Projet de dév} %^g\n %?")
+          ("u" "Formation Urfist"
+           entry
+           (file+headline my-todo-file "Formations")
+           "* TODO %^{Formation}\n SCHEDULED: %^t\n %?"))))
   ;; Afficher les images :
   (add-hook 'org-mode-hook 'org-display-inline-images)
   ;; Afficher les PDF directement dans Emacs (corrige un possible bug avec C-c C-e l o):
@@ -288,15 +288,15 @@ Sort alphabetically the CANDIDATES (which is a list of strings)."
   (setq org-archive-reversed-order t)
   ;; Custom agenda view :
   (setq org-agenda-custom-commands
-      '(("d" "Custom daily agenda"
-         ((agenda ""
-                  ((org-agenda-span 'day))
-                  (org-agenda-overriding-header "Agenda du jour"))
-          (tags "PRIORITY=\"A\""
-                ((org-agenda-skip-function '(org-agenda-skip-entry-if 'todo 'done))
-                 (org-agenda-overriding-header "Tâches importantes à finaliser")))
-          (todo "WAITING"
-                ((org-agenda-overriding-header "Tâches en attente"))))))))
+        '(("d" "Custom daily agenda"
+           ((agenda ""
+                    ((org-agenda-span 'day))
+                    (org-agenda-overriding-header "Agenda du jour"))
+            (tags "PRIORITY=\"A\""
+                  ((org-agenda-skip-function '(org-agenda-skip-entry-if 'todo 'done))
+                   (org-agenda-overriding-header "Tâches importantes à finaliser")))
+            (todo "WAITING"
+                  ((org-agenda-overriding-header "Tâches en attente"))))))))
 
 ;; Utilisation de org-ref :
 (use-package org-ref
@@ -429,14 +429,14 @@ This requires a statistic cookie such as [%] or [/] to be set."
       (goto-char beg)
       ;; Search for statistics cookie "[%]":
       (if (re-search-forward "\\[\\([0-9]*%\\)\\]" end t)
-        ;; Close the task if cookie indicates 100%:
-        (if (string-equal (match-string 1) "100%")
-            (org-todo 'done)
-          ;; Re-open the task if cookie is < 100%
-          ;; (do not change todo status if already open,
-          ;; e.g. with a WAITING status)
-          (unless (org-entry-is-todo-p)
-            (org-todo 'todo)))
+          ;; Close the task if cookie indicates 100%:
+          (if (string-equal (match-string 1) "100%")
+              (org-todo 'done)
+            ;; Re-open the task if cookie is < 100%
+            ;; (do not change todo status if already open,
+            ;; e.g. with a WAITING status)
+            (unless (org-entry-is-todo-p)
+              (org-todo 'todo)))
         ;; Otherwise, search for statistics cookie "[/]":
         (progn
           (when (re-search-forward "\\[\\([0-9]*\\)/\\([0-9]*\\)\\]" end t)
