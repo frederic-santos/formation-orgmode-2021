@@ -58,7 +58,7 @@ Ou encore, pour Manjaro :
 sudo pacman -S emacs
 #+end_src
 
-** TODO Configurer Emacs
-Afin que nous utilisions tous la même version et les mêmes fonctionnalités d'Emacs durant la formation, j'ai mis en ligne un fichier d'initialisation d'Emacs (~init.el~) que vous devrez télécharger puis placer dans le dosser =~/.emacs.d/= avant le début de la formation.
+** Configurer Emacs
+Afin que nous utilisions tous la même version et les mêmes fonctionnalités d'Emacs durant la formation, vous devrez [[https://gitlab.com/f-santos/formation-orgmode-2021/-/blob/master/ressources/init.el][télécharger un fichier d'initialisation]] (~init.el~), puis le placer dans le dossier =~/.emacs.d/= avant le début de la formation.
 
-Ce fichier contient une "distribution" minimale d'Emacs, et se charge de l'installation automatique de certains packages
+Ce fichier contient une "distribution" minimale d'Emacs, et se charge de l'installation automatique des packages qui seront requis durant la formation.
