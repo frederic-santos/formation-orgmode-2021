@@ -16,10 +16,16 @@ Remarques :
 ** Pandoc
 [[https://pandoc.org/installing.html][Pandoc]] pourra être nécessaire pour obtenir de meilleurs exports en .odt ou .docx. Vous trouverez le lien d'installation sur le site officiel ; l'installation en elle-même ne devrait présenter aucune difficulté.
 
+** MSYS2
+[[https://www.msys2.org/#installation][Installer l'environnement MSYS2]] sera également nécessaire.
+
 ** Installer Emacs
 Dans cette formation, nous partirons avec un Emacs "vierge" (i.e., non customisé/hacké par des tiers), qui peut être téléchargé en suivant [[http://ftp.gnu.org/gnu/emacs/windows/emacs-27/emacs-27.2-x86_64-installer.exe][ce lien]]. L'installation ne devrait poser aucun problème.
 
 ** Configurer Emacs
-Afin que nous utilisions tous la même version et les mêmes fonctionnalités d'Emacs durant la formation, vous devrez [[https://gitlab.com/f-santos/formation-orgmode-2021/-/blob/master/ressources/init.el][télécharger un fichier d'initialisation]] (~init.el~), puis le placer dans le dossier =C:\Users\<VOTRE USERNAME>\AppData\Roaming\.emacs.d\= avant le début de la formation.
+Afin que nous utilisions tous la même version et les mêmes fonctionnalités d'Emacs durant la formation, vous devrez [[https://gitlab.com/f-santos/formation-orgmode-2021/-/blob/master/ressources/init.el][télécharger un fichier d'initialisation]] (~init.el~), puis :
+
+1. Démarrer et fermer une première fois Emacs (si vous ne l'avez jamais utilisé) afin de l'initialiser correctement.
+2. Placer le fichier =init.el= précédemment téléchargé dans le dossier =C:\Users\<VOTRE USERNAME>\.emacs.d\= avant le début de la formation.
 
 Ce fichier contient une "distribution" minimale d'Emacs, et se charge de l'installation automatique des packages qui seront requis durant la formation.
