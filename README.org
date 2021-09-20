@@ -7,39 +7,39 @@ L'Urfist Bordeaux propose durant l'automne 2021 un cycle de formations d'introdu
 
 Tous les fichiers sont sous licence [[http://creativecommons.org/licenses/by-nc-sa/4.0/][Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License]].
 
-* Pour aller plus loin
+** Pour aller plus loin
 Quelques ressources externes utiles.
 
-** Généralités sur Emacs
+*** Généralités sur Emacs
 - [[https://www.gnu.org/software/emacs/][Le site officiel]], comprenant notamment toutes les infos sur l'installation d'Emacs (et beaucoup de documentation)
 - [[https://www.itpro.co.uk/development/programming/355406/how-to-learn-emacs][Un tutoriel rapide (et récent) qui couvre également Org mode]]
 - [[https://sachachua.com/blog/][L'incontournable site de Sacha Chua]] pour les actualités hebdomadaires sur Emacs
 - Notamment, [[https://sachachua.com/blog/wp-content/uploads/2013/05/How-to-Learn-Emacs-v2-Large.png][une petite BD pour bien débuter sur Emacs]], par Sacha Chua
 - Un [[https://emacs-doctor.com/forum/][forum francophone]] d'utilisateurs d'Emacs
 
-** Emacs Lisp
+*** Emacs Lisp
 Emacs Lisp (un dialecte de Lisp) est le langage d'extension d'Emacs. Il permet de personnaliser le comportement du logiciel, et de créer de nouveaux packages pour partager vos créations.
 - [[https://bzg.fr/en/learn-emacs-lisp-in-15-minutes.html/][Un court tutoriel sur Emacs Lisp]] par le mainteneur principal d'Org mode
 - [[http://wikemacs.org/wiki/Emacs_Lisp_Ressources][Beaucoup d'autres ressources]] listées ici
 
-** Starter kits
+*** Starter kits
 Pour ceux qui ne souhaitent pas coder en Lisp pour personnaliser Emacs, des configurations toutes prêtes (appelées /starter kits/) existent un peu partout sur la toile. Quelques exemples [[https://www.emacswiki.org/emacs/StarterKits][sont listés ici]].
 
 Avis personnel : cela peut incontestablement aider les débutants, car le Emacs "out of the box" ou "vanilla" (sans aucune personnalisation) peut sembler très rebutant. Ces starter kits permettent de débuter avec des paramétrages plus agréables que le paramétrage par défaut. Toutefois, il ne faut pas perdre de vue que *la* grande force d'Emacs est la capacité à être personnalisé sans limite, et à se plier à la moindre de vos préférences ou habitudes de travail. Ces starter kits ne le pourront pas : seul un paramétrage par vos soins fera d'Emacs un compagnon vraiment utile pour vous. "L'esprit Emacs" consiste plutôt à considérer ces starter kits comme des points de départ à retravailler, et pas comme des produits finis.
 
 Point positif en revanche : cela peut vous éviter [[https://www.reddit.com/r/emacs/comments/hgcci7/its_a_constant_battle/][de sombrer dans une Emacsite]].
 
-** Généralités sur Org mode
+*** Généralités sur Org mode
 Trois ressources essentielles :
 - [[https://orgmode.org/][le site officiel]]
 - la [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][formidable chaîne Youtube de Rainer König]] sur Org mode
 - [[https://www.youtube.com/watch?v=oJTwQvgfgMM][une présentation vidéo d'Org mode par son créateur]] (Carsten Dominik) 
 
-** Fonctionnalités GTD avancées avec Org mode
+*** Fonctionnalités GTD avancées avec Org mode
 Quelques billets de blog pour les fonctionnalités d'agenda et de gestion des tâches avec Org mode :
 - [[http://www.newartisans.com/2007/08/using-org-mode-as-a-day-planner/][Org mode as a day planner]]
 - [[http://members.optusnet.com.au/~charles57/GTD/datetree.html][Capture mode and Date Trees in org-mode]]
 
-** Divers
+*** Divers
 - [[https://github.com/orgzly/orgzly-android][Orgzly]], une appli Android dans l'esprit Org mode
 - [[http://www.mkbehr.com/posts/a-research-workflow-with-zotero-and-org-mode/][Une note de blog détaillée]] sur l'interaction entre Zotero et Org mode.
