@@ -40,6 +40,9 @@ Quelques billets de blog pour les fonctionnalités d'agenda et de gestion des t�
 - [[http://www.newartisans.com/2007/08/using-org-mode-as-a-day-planner/][Org mode as a day planner]]
 - [[http://members.optusnet.com.au/~charles57/GTD/datetree.html][Capture mode and Date Trees in org-mode]]
 
+*** Gestion des références bibliographiques
+Depuis la version 9.5, Org mode supporte nativement l'insertion de références bibliographiques. En plus de [[https://orgmode.org/manual/Citation-handling.html#Citation-handling][la documentation officielle]] à ce sujet, voici [[https://blog.tecosaur.com/tmio/2021-07-31-citations.html][un blog post très utile]] de Tecosaur.
+
 *** Divers
 - [[https://github.com/orgzly/orgzly-android][Orgzly]], une appli Android dans l'esprit Org mode
-- [[http://www.mkbehr.com/posts/a-research-workflow-with-zotero-and-org-mode/][Une note de blog détaillée]] sur l'interaction entre Zotero et Org mode.
+- [[http://www.mkbehr.com/posts/a-research-workflow-with-zotero-and-org-mode/][Une note de blog détaillée]] sur l'interaction entre Zotero et Org mode
