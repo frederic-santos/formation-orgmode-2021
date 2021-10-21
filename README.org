@@ -33,7 +33,8 @@ Point positif en revanche : cela peut vous éviter [[https://www.reddit.com/r/em
 Trois ressources essentielles :
 - [[https://orgmode.org/][le site officiel]]
 - la [[https://www.youtube.com/playlist?list=PLVtKhBrRV_ZkPnBtt_TD1Cs9PJlU0IIdE][formidable chaîne Youtube de Rainer König]] sur Org mode
-- [[https://www.youtube.com/watch?v=oJTwQvgfgMM][une présentation vidéo d'Org mode par son créateur]] (Carsten Dominik) 
+- [[https://www.youtube.com/watch?v=oJTwQvgfgMM][une présentation vidéo d'Org mode par son créateur]] (Carsten Dominik)
+- [[http://doc.norang.ca/org-mode.html][le site de Bernt Hansen]] pour des idées de workflow global
 
 *** Fonctionnalités GTD avancées avec Org mode
 Quelques billets de blog pour les fonctionnalités d'agenda et de gestion des tâches avec Org mode :
@@ -41,6 +42,8 @@ Quelques billets de blog pour les fonctionnalités d'agenda et de gestion des t�
 - [[http://members.optusnet.com.au/~charles57/GTD/datetree.html][Capture mode and Date Trees in org-mode]]
 
 *** Gestion des références bibliographiques
+La formation a été animée en utilisant la version 9.4.6 d'Org mode.
+
 Depuis la version 9.5, Org mode supporte nativement l'insertion de références bibliographiques. En plus de [[https://orgmode.org/manual/Citation-handling.html#Citation-handling][la documentation officielle]] à ce sujet, voici [[https://blog.tecosaur.com/tmio/2021-07-31-citations.html][un blog post très utile]] de Tecosaur.
 
 *** Divers
