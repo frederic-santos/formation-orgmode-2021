@@ -16,6 +16,7 @@ Quelques ressources externes utiles.
 *** Généralités sur Emacs
 - [[https://www.gnu.org/software/emacs/][Le site officiel]], comprenant notamment toutes les infos sur l'installation d'Emacs (et beaucoup de documentation)
 - [[https://www.itpro.co.uk/development/programming/355406/how-to-learn-emacs][Un tutoriel rapide (et récent) qui couvre également Org mode]]
+- La chaîne Youtube [[https://www.youtube.com/c/SystemCrafters/featured][System Crafters]] (par [[https://github.com/daviwil][@daviwil]])
 - [[https://sachachua.com/blog/][L'incontournable site de Sacha Chua]] pour les actualités hebdomadaires sur Emacs
 - Notamment, [[https://sachachua.com/blog/wp-content/uploads/2013/05/How-to-Learn-Emacs-v2-Large.png][une petite BD pour bien débuter sur Emacs]], par Sacha Chua
 - Un [[https://emacs-doctor.com/forum/][forum francophone]] d'utilisateurs d'Emacs
