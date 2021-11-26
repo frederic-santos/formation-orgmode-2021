@@ -7,6 +7,9 @@ L'Urfist Bordeaux propose durant l'automne 2021 un cycle de formations d'introdu
 
 Tous les fichiers sont sous licence [[http://creativecommons.org/licenses/by-nc-sa/4.0/][Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License]].
 
+** Déroulé de la formation
+Après avoir suivi pas à pas la trame de découverte d'Emacs et Org mode (cf. document pdf dans le dossier =docs=), les participants répliquent sur leur propre poste le document =rapport.pdf= (proposé dans le dossier =tp=), en partant de zéro.
+
 ** Pour aller plus loin
 Quelques ressources externes utiles.
 
